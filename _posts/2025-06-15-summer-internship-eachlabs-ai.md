@@ -10,9 +10,7 @@ I started by working on image face swap and took complete ownership of that proj
 
 **Learnings:** ONNX and TensorRT to accelerate inference.
 
-After that, I slowly dived into model optimization. I read a hella lot of tutorials and GitHub discussions, learned a lot of new things to reduce latency, and tried out different techniques. The ones that gave the most returns were:
-
-**Learnings:** quantization, caching, and frame interpolation (for video models).
+After that, I slowly dived into model optimization. I read a hella lot of tutorials and GitHub discussions, learned a lot of new things to reduce latency, and tried out different techniques. The ones that gave the most returns were quantization, caching, and frame interpolation (for video models).
 
 **Biggest takeaway:** For startups, speed matters a lot.
 
