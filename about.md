@@ -15,8 +15,15 @@ title: About
 ## EXPERIENCE
 
 ### Machine Learning Intern
+**[Magic Hour](https://magichour.ai/)**  
+Feb 2026 – Present
+
+• Optimizing image, video, and text-to-speech (TTS) models for production workloads  
+• Prototyping new model pipelines and product-facing AI features
+
+### Machine Learning Intern
 **Dria.co**  
-Nov 2025 – Present
+Nov 2025 – Feb 2026
 
 • Integrated Model Context Protocol (MCP) to expose DNET for AI agent interaction  
 • Implemented schema-constrained generation with Outlines and xGrammar  
