@@ -14,12 +14,14 @@ title: About
 
 ## EXPERIENCE
 
-### Machine Learning Intern
+### ML Engineer
 **[Magic Hour](https://magichour.ai/)**  
 Feb 2026 – Present
 
-• Optimizing image, video, and text-to-speech (TTS) models for production workloads  
-• Prototyping new model pipelines and product-facing AI features
+• Inference optimization for image and video models in production, including Klein4B for real-time image editing by applying compile side improvements for DiT and VAE, caching, faster attention, and NVFP4 weight + activation quantization with a lighter VAE, which reduced latency on an RTX 6000 Pro from ~324ms to ~128ms at 576x384 and 4 steps
+• Building workflows around image and video models, for example:
+  • ltx2.3 workflow with lipdub LoRA for lip sync with external audio
+  • another ltx workflow for scene outpainting
 
 ### Machine Learning Intern
 **Dria.co**  

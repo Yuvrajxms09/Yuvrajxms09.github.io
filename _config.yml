@@ -4,7 +4,7 @@ email: singhyuvrajf1@gmail.com # email of site's author
 url: https://yuvrajxms09.github.io # root address of the site
 baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed) 
-  <p> <span style="color: #FFFFFF; font-size: 1.2em;">ML Engineer</span> <br> <span style="color: #1DB954;">Always interested in collaborations : feel free to reach out!</span> <br>  <br> <span style="color: #1DB954;">interests : tennis, F1, dancing</span> <br> <span style="color: #1DB954;">currently : finetuning LLMs and exploring bio/ML applications</span> <br> </p>
+  <p> <span style="color: #FFFFFF; font-size: 1.2em;">ML Engineer</span> <br> <span style="color: #1DB954;">Working on inference optimization and building workflows around image and video models.</span> <br>  <br> <span style="color: #1DB954;">interests : tennis, F1, dancing</span> <br> <span style="color: #1DB954;">always interested in collaborations : feel free to reach out!</span> <br> </p>
 
 # permalink: /:year/:month/:day/:title.html
 
