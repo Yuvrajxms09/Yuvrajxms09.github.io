@@ -5,7 +5,7 @@ title: About
 
 ## YUVRAJ SINGH
 
-**India** | [singhyuvrajf1@gmail.com](mailto:singhyuvrajf1@gmail.com) | +918178693375  
+**India** | [singhyuvrajf1@gmail.com](mailto:singhyuvrajf1@gmail.com)<br>
 [linkedin.com/in/yuvraj-s-4988ba371](https://www.linkedin.com/in/yuvraj-s-4988ba371/) | [github.com/Yuvrajxms09](https://github.com/Yuvrajxms09)
 
 **Interests:** tennis, formula 1, dancing
