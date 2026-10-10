@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Selected Work — Yuvraj Singh
+title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
@@ -8,217 +8,236 @@ styles:
 
 <div class="work-shell">
   <header class="work-header">
-    <a class="work-mark" href="{{ '/' | relative_url }}">YUVRAJ SINGH</a>
+    <a class="work-mark" href="{{ '/' | relative_url }}">Yuvraj Singh</a>
     <nav class="work-nav" aria-label="Main navigation">
       <a class="work-nav-current" href="{{ '/work/' | relative_url }}" aria-current="page">Work</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="https://github.com/Yuvrajxms09">GitHub</a>
       <a href="mailto:singhyuvrajf1@gmail.com">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="work-hero" aria-labelledby="work-title">
+    <section class="work-intro" aria-labelledby="work-title">
       <div>
-        <p class="work-kicker">Selected work / 2025–26</p>
-        <h1 id="work-title">Model workflows,<br />from input to result.</h1>
+        <p class="work-kicker">Machine learning engineer</p>
+        <h1 id="work-title">Model workflows<br />&amp; inference systems</h1>
       </div>
-      <p>I build practical workflows around image and video models, then evaluate the results against the task.</p>
-    </section>
-
-    <nav class="work-index" aria-label="Projects">
-      <a href="#flux-klein">01 / Flux Klein</a>
-      <a href="#outpainting">02 / Outpainting</a>
-      <a href="#restyling">03 / Restyling</a>
-      <a href="#editing">04 / Video editing</a>
-      <a href="#lipsync">05 / Lip sync</a>
-      <a href="#character-replacement">06 / Character replacement</a>
-      <a href="#minimax-restyle">07 / Minimax restyle</a>
-    </nav>
-
-    <section class="work-project" id="flux-klein" aria-labelledby="flux-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">01</span>
-        <div>
-          <h2 id="flux-title">Flux Klein</h2>
-          <p class="work-summary">Webcam-driven image editing and multi-angle generation.</p>
-        </div>
-        <span class="work-meta">Image generation / Klein 4B</span>
-      </div>
-      <div class="work-media-grid">
-        <article class="work-media-item">
-          <p class="work-media-label"><span>Webcam workflow</span><span>Live input → latest output</span></p>
-          <div class="work-media-frame">
-            <video controls playsinline preload="none" poster="{{ '/assets/work/posters/flux-klein-webcam-comparison.jpg' | relative_url }}" aria-label="Flux Klein webcam comparison recording">
-              <source src="{{ '/assets/work/clips/flux-klein-webcam-comparison.mp4' | relative_url }}" type="video/mp4" />
-            </video>
-          </div>
-        </article>
-        <article class="work-media-item">
-          <p class="work-media-label"><span>Webcam session</span><span>Klein 4B</span></p>
-          <div class="work-media-frame">
-            <video controls playsinline preload="none" poster="{{ '/assets/work/posters/flux-klein-webcam-session.jpg' | relative_url }}" aria-label="Flux Klein webcam session recording">
-              <source src="{{ '/assets/work/clips/flux-klein-webcam-session.mp4' | relative_url }}" type="video/mp4" />
-            </video>
-          </div>
-        </article>
-      </div>
-      <div class="work-media-grid work-media-grid-spaced">
-        <article class="work-media-item">
-          <p class="work-media-label"><span>Multi-angle generation</span><span>Front / side / rear / overhead</span></p>
-          <div class="work-media-frame"><img src="{{ '/assets/work/images/flux-klein-multi-angle-main.png' | relative_url }}" alt="A generated classic car shown from front, side, rear, and overhead camera angles" loading="lazy" /></div>
-        </article>
-        <article class="work-media-item">
-          <p class="work-media-label"><span>Angle studies</span><span>Additional views</span></p>
-          <div class="work-media-grid" style="gap: 12px;">
-            <div class="work-media-frame"><img src="{{ '/assets/work/images/flux-klein-multi-angle-extended.png' | relative_url }}" alt="Generated car camera-angle contact sheet" loading="lazy" /></div>
-            <div class="work-media-frame"><img src="{{ '/assets/work/images/flux-klein-multi-angle-detail.png' | relative_url }}" alt="Additional generated car angle studies" loading="lazy" /></div>
-          </div>
-        </article>
+      <div class="work-intro-copy">
+        <p>I work on inference performance and build end-to-end workflows around image and video models.</p>
+        <dl class="work-context">
+          <div><dt>Current</dt><dd>Magic Hour</dd></div>
+          <div><dt>Previous</dt><dd>Dria · Eachlabs</dd></div>
+          <div><dt>Focus</dt><dd>Model integration · workflow design · evaluation</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section class="work-project" id="outpainting" aria-labelledby="outpainting-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">02</span>
-        <div>
-          <h2 id="outpainting-title">Video outpainting</h2>
-          <p class="work-summary">Extend the frame while keeping the subject and motion in view.</p>
-        </div>
-        <span class="work-meta">LTX / 4 source-to-result examples</span>
-      </div>
-      <div class="work-pairs">
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">Iron Man</h3><p class="work-pair-detail">Speech clip</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-input-iron-man.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-input-iron-man.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Outpainted</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-output-iron-man.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-output-iron-man.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-          </div>
-        </div>
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">10 Things I Hate About You</h3><p class="work-pair-detail">Julia</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-input-10-things.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-input-10-things.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Outpainted</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-output-10-things.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-output-10-things.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-          </div>
-        </div>
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">Tom Cruise</h3><p class="work-pair-detail">Eyes Wide Shut</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-input-tom-cruise.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-input-tom-cruise.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Outpainted</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-output-tom-cruise.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-output-tom-cruise.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-          </div>
-        </div>
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">John Travolta</h3><p class="work-pair-detail">Portrait expansion</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-input-john-travolta.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-input-john-travolta.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Outpainted</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/outpaint-output-john-travolta.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/outpaint-output-john-travolta.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="work-content">
+      <nav class="work-index" aria-label="Work by capability">
+        <p class="work-index-title">Capabilities</p>
+        <a href="#restyling"><span>01</span> Video restyling</a>
+        <a href="#lipsync"><span>02</span> Lip sync</a>
+        <a href="#editing"><span>03</span> Video editing</a>
+        <a href="#outpainting"><span>04</span> Video outpainting</a>
+        <a href="#character-replacement"><span>05</span> Character replacement</a>
+        <a href="#image-workflows"><span>06</span> Image workflows</a>
+      </nav>
 
-    <section class="work-project" id="restyling" aria-labelledby="restyling-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">03</span>
-        <div>
-          <h2 id="restyling-title">Video restyling</h2>
-          <p class="work-summary">Apply new visual treatments while preserving the source action.</p>
-        </div>
-        <span class="work-meta">LTX / style comparisons</span>
-      </div>
-      <div class="work-media-grid">
-        <article class="work-media-item"><p class="work-media-label"><span>Basketball style transfer</span><span>Anime / Minecraft / Spider-Man / sketch</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-restyle-basketball-four-way.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-restyle-basketball-four-way.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Style comparison</span><span>Multiple treatments</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-restyle-basketball-styles.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-restyle-basketball-styles.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Film restyle · part 1</span><span>Original + 3 styles</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-restyle-film-part-1.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-restyle-film-part-1.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Film restyle · part 2</span><span>Original + 3 styles</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-restyle-film-part-2.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-restyle-film-part-2.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Restyle threshold study</span><span>0.15</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-restyle-threshold-015.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-restyle-threshold-015.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-      </div>
-    </section>
+      <div class="work-projects">
+        <section class="work-project" id="restyling" aria-labelledby="restyling-title">
+          <header class="work-project-heading">
+            <span class="work-number">01</span>
+            <div>
+              <p class="work-eyebrow">Video generation</p>
+              <h2 id="restyling-title">Video restyling</h2>
+              <p class="work-summary">Restyle source footage while retaining its subjects, action, and framing. Examples are grouped by task, with each model shown separately.</p>
+            </div>
+          </header>
 
-    <section class="work-project" id="editing" aria-labelledby="editing-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">04</span>
-        <div>
-          <h2 id="editing-title">Video editing</h2>
-          <p class="work-summary">Prompted changes to objects, weather, lighting, and scenes.</p>
-        </div>
-        <span class="work-meta">LTX / video-to-video</span>
-      </div>
-      <div class="work-media-grid">
-        <article class="work-media-item"><p class="work-media-label"><span>Object removal</span><span>Remove car / pole / tree / wall</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-edit-car-removal.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-edit-car-removal.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Scene variations</span><span>Weather / background / lighting</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-edit-car-variations.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-edit-car-variations.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Prompted edits</span><span>Three-way comparison</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-edit-car-three-way.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-edit-car-three-way.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Object removal</span><span>Remove bicycle</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-edit-bicycle-removal.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-edit-bicycle-removal.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-      </div>
-    </section>
-
-    <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">05</span>
-        <div>
-          <h2 id="lipsync-title">Lip sync</h2>
-          <p class="work-summary">Drive facial motion from external audio and compare source with result.</p>
-        </div>
-        <span class="work-meta">LTX / Minimax R2V</span>
-      </div>
-      <div class="work-pairs">
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">Ronaldo</h3><p class="work-pair-detail">LTX · video-to-video lip sync</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-lipsync-ronaldo-input.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-lipsync-ronaldo-input.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Output</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-lipsync-ronaldo-output.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-lipsync-ronaldo-output.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
+          <div class="model-group">
+            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="ltx-restyle-basketball-four-way.mp4" label="Basketball style transfer" detail="Anime · Minecraft · Spider-Man · sketch" %}
+              {% include work_video.html file="ltx-restyle-basketball-styles.mp4" label="Basketball style comparison" detail="Multiple style treatments" %}
+              {% include work_video.html file="ltx-restyle-film-part-1.mp4" label="Film restyle · part 1" detail="Original + 3 styles" %}
+              {% include work_video.html file="ltx-restyle-film-part-2.mp4" label="Film restyle · part 2" detail="Original + 3 styles" %}
+              {% include work_video.html file="ltx-restyle-threshold-015.mp4" label="Restyle threshold study" detail="0.15 threshold" %}
+            </div>
           </div>
-        </div>
-        <div class="work-pair">
-          <div><h3 class="work-pair-title">Boy speaking</h3><p class="work-pair-detail">LTX-2.3 · lip sync</p></div>
-          <div class="work-pair-media">
-            <div class="work-media-item"><p class="work-media-label"><span>Input</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-lipsync-boy-input.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-lipsync-boy-input.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
-            <div class="work-media-item"><p class="work-media-label"><span>Output</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/ltx-lipsync-boy-output.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/ltx-lipsync-boy-output.mp4' | relative_url }}" type="video/mp4" /></video></div></div>
+
+          <div class="model-group">
+            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p></header>
+            <div class="media-grid media-grid-single">
+              {% include work_video.html file="minimax-restyle-car-scene.mp4" label="Car scene" detail="Original + stylized results" %}
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="work-media-grid work-media-grid-spaced">
-        <article class="work-media-item"><p class="work-media-label"><span>Minimax R2V</span><span>Chris Evans</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/minimax-lipsync-chris-evans.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/minimax-lipsync-chris-evans.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Minimax R2V</span><span>Robert Downey Jr.</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/minimax-lipsync-robert-downey-jr.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/minimax-lipsync-robert-downey-jr.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Minimax R2V</span><span>Leonardo DiCaprio</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/minimax-lipsync-leonardo-dicaprio.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/minimax-lipsync-leonardo-dicaprio.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-      </div>
-    </section>
+        </section>
 
-    <section class="work-project" id="character-replacement" aria-labelledby="character-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">06</span>
-        <div>
-          <h2 id="character-title">Character replacement</h2>
-          <p class="work-summary">Compare identity transfer outputs against the original source.</p>
-        </div>
-        <span class="work-meta">MagicHour / H3 / MM7</span>
-      </div>
-      <div class="work-media-grid">
-        <article class="work-media-item"><p class="work-media-label"><span>Deadpool</span><span>Original / MagicHour / H3</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/deadpool-maghour-vs-h3.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/deadpool-maghour-vs-h3.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Peter Parker</span><span>Original / MagicHour / H3</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/peter-parker-maghour-vs-h3.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/peter-parker-maghour-vs-h3.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-        <article class="work-media-item"><p class="work-media-label"><span>Michael Jackson</span><span>MM7 / H3</span></p><div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/michael-jackson-mm7-vs-h3.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/michael-jackson-mm7-vs-h3.mp4' | relative_url }}" type="video/mp4" /></video></div></article>
-      </div>
-    </section>
+        <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
+          <header class="work-project-heading">
+            <span class="work-number">02</span>
+            <div>
+              <p class="work-eyebrow">Audio-driven video</p>
+              <h2 id="lipsync-title">Lip sync</h2>
+              <p class="work-summary">Audio-driven facial motion, shown as source-to-result pairs where both clips are available.</p>
+            </div>
+          </header>
 
-    <section class="work-project" id="minimax-restyle" aria-labelledby="minimax-restyle-title">
-      <div class="work-project-heading">
-        <span class="work-eyebrow work-number">07</span>
-        <div>
-          <h2 id="minimax-restyle-title">Style transfer</h2>
-          <p class="work-summary">Restyle a source scene while keeping its composition and motion recognizable.</p>
-        </div>
-        <span class="work-meta">Minimax / Sage style</span>
+          <div class="model-group">
+            <header class="model-heading"><h3>LTX</h3><p>Video-to-video · LTX-2.3</p></header>
+            <div class="comparison-list">
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>Ronaldo</h4><p>Source and result</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="ltx-lipsync-ronaldo-input.mp4" label="Input" %}
+                  {% include work_video.html file="ltx-lipsync-ronaldo-output.mp4" label="Output" %}
+                </div>
+              </div>
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>Speaking clip</h4><p>Source and result</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="ltx-lipsync-boy-input.mp4" label="Input" %}
+                  {% include work_video.html file="ltx-lipsync-boy-output.mp4" label="Output" %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-group">
+            <header class="model-heading"><h3>Minimax</h3><p>R2V · rendered examples</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="minimax-lipsync-chris-evans.mp4" label="Chris Evans" detail="R2V output" %}
+              {% include work_video.html file="minimax-lipsync-robert-downey-jr.mp4" label="Robert Downey Jr." detail="R2V output" %}
+              {% include work_video.html file="minimax-lipsync-leonardo-dicaprio.mp4" label="Leonardo DiCaprio" detail="R2V output" %}
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="editing" aria-labelledby="editing-title">
+          <header class="work-project-heading">
+            <span class="work-number">03</span>
+            <div>
+              <p class="work-eyebrow">Video generation</p>
+              <h2 id="editing-title">Video editing</h2>
+              <p class="work-summary">Prompted edits to objects and scenes, with the original and edited results shown together.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="ltx-edit-car-removal.mp4" label="Object removal" detail="Remove car · pole · tree · wall" %}
+              {% include work_video.html file="ltx-edit-car-variations.mp4" label="Scene variations" detail="Weather · background · lighting" %}
+              {% include work_video.html file="ltx-edit-car-three-way.mp4" label="Prompted edits" detail="Three-way comparison" %}
+              {% include work_video.html file="ltx-edit-bicycle-removal.mp4" label="Object removal" detail="Remove bicycle" %}
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="outpainting" aria-labelledby="outpainting-title">
+          <header class="work-project-heading">
+            <span class="work-number">04</span>
+            <div>
+              <p class="work-eyebrow">Video generation</p>
+              <h2 id="outpainting-title">Video outpainting</h2>
+              <p class="work-summary">Extend the frame around existing footage while keeping the subject and motion in view.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>LTX</h3><p>Four source-to-result examples</p></header>
+            <div class="comparison-list">
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>Iron Man</h4><p>Speech clip</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="outpaint-input-iron-man.mp4" label="Input" %}
+                  {% include work_video.html file="outpaint-output-iron-man.mp4" label="Outpainted" %}
+                </div>
+              </div>
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>10 Things I Hate About You</h4><p>Julia</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" %}
+                  {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" %}
+                </div>
+              </div>
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>Tom Cruise</h4><p>Eyes Wide Shut</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" %}
+                  {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" %}
+                </div>
+              </div>
+              <div class="comparison-row">
+                <div class="comparison-title"><h4>John Travolta</h4><p>Portrait expansion</p></div>
+                <div class="comparison-media">
+                  {% include work_video.html file="outpaint-input-john-travolta.mp4" label="Input" %}
+                  {% include work_video.html file="outpaint-output-john-travolta.mp4" label="Outpainted" %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="character-replacement" aria-labelledby="character-title">
+          <header class="work-project-heading">
+            <span class="work-number">05</span>
+            <div>
+              <p class="work-eyebrow">Model comparison</p>
+              <h2 id="character-title">Character replacement</h2>
+              <p class="work-summary">Compare identity-transfer results from different model pipelines against the original footage.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>MagicHour · H3</h3><p>Original, MagicHour, and H3</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="deadpool-maghour-vs-h3.mp4" label="Deadpool" detail="Original / MagicHour / H3" %}
+              {% include work_video.html file="peter-parker-maghour-vs-h3.mp4" label="Peter Parker" detail="Original / MagicHour / H3" %}
+            </div>
+          </div>
+          <div class="model-group">
+            <header class="model-heading"><h3>MM7 · H3</h3><p>Side-by-side comparison</p></header>
+            <div class="media-grid media-grid-single">
+              {% include work_video.html file="michael-jackson-mm7-vs-h3.mp4" label="Michael Jackson" detail="MM7 / H3" %}
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="image-workflows" aria-labelledby="image-title">
+          <header class="work-project-heading">
+            <span class="work-number">06</span>
+            <div>
+              <p class="work-eyebrow">Image generation</p>
+              <h2 id="image-title">Image workflows</h2>
+              <p class="work-summary">Klein 4B experiments across live webcam editing and consistent multi-angle image generation.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>Flux Klein 4B</h3><p>Live workflow · multi-angle generation</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="flux-klein-webcam-comparison.mp4" label="Webcam editing" detail="Live input → latest output" %}
+              {% include work_video.html file="flux-klein-webcam-session.mp4" label="Workflow session" detail="Klein 4B" %}
+            </div>
+            <div class="image-study">
+              <figure class="work-image">
+                <figcaption><span>Multi-angle output</span><span>Front · side · rear · overhead</span></figcaption>
+                <img src="{{ '/assets/work/images/flux-klein-multi-angle-main.png' | relative_url }}" alt="A generated classic car from front, side, rear, and overhead camera angles" loading="lazy" />
+              </figure>
+              <figure class="work-image">
+                <figcaption><span>Additional camera angles</span><span>Generated view studies</span></figcaption>
+                <div class="image-study-stack">
+                  <img src="{{ '/assets/work/images/flux-klein-multi-angle-extended.png' | relative_url }}" alt="Extended sheet of generated car camera angles" loading="lazy" />
+                  <img src="{{ '/assets/work/images/flux-klein-multi-angle-detail.png' | relative_url }}" alt="Additional generated car view studies" loading="lazy" />
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
       </div>
-      <article class="work-media-item">
-        <p class="work-media-label"><span>Car scene comparison</span><span>Original + stylized results</span></p>
-        <div class="work-media-frame"><video controls playsinline preload="none" poster="{{ '/assets/work/posters/minimax-restyle-car-scene.jpg' | relative_url }}"><source src="{{ '/assets/work/clips/minimax-restyle-car-scene.mp4' | relative_url }}" type="video/mp4" /></video></div>
-      </article>
-    </section>
+    </div>
   </main>
 
   <footer class="work-footer">
-    <span>Yuvraj Singh · Model workflows</span>
-    <a href="mailto:singhyuvrajf1@gmail.com">Get in touch ↗</a>
+    <span>Yuvraj Singh · Machine learning engineer</span>
+    <a href="mailto:singhyuvrajf1@gmail.com">Contact</a>
   </footer>
 </div>

@@ -1,0 +1,7 @@
+{% assign work_video_base = include.file | remove: '.mp4' %}
+<figure class="work-media">
+  <figcaption><span>{{ include.label }}</span>{% if include.detail %}<span>{{ include.detail }}</span>{% endif %}</figcaption>
+  <video controls playsinline preload="none" poster="{{ '/assets/work/posters/' | append: work_video_base | append: '.jpg' | relative_url }}" aria-label="{{ include.label }}{% if include.detail %}: {{ include.detail }}{% endif %}">
+    <source src="{{ '/assets/work/clips/' | append: include.file | relative_url }}" type="video/mp4" />
+  </video>
+</figure>
