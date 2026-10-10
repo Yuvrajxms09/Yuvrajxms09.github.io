@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 2
+styles_version: 3
 ---
 
 <div class="work-shell">
@@ -21,7 +21,7 @@ styles_version: 2
   <main>
     <section class="work-intro" aria-labelledby="work-title">
       <div>
-        <p class="work-kicker">Machine learning engineer</p>
+        <p class="work-kicker"><span class="status-dot" aria-hidden="true"></span> Machine learning engineer</p>
         <h1 id="work-title">Model workflows<br />&amp; inference systems</h1>
       </div>
       <div class="work-intro-copy">
@@ -31,12 +31,19 @@ styles_version: 2
           <div><dt>Previous</dt><dd>Dria · Eachlabs</dd></div>
           <div><dt>Focus</dt><dd>Model integration · workflow design · evaluation</dd></div>
         </dl>
+        <div class="workflow-strip" aria-label="Work examples show source material where available, the model, and its result">
+          <div><span>01</span><strong>Source</strong><small>when available</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>02</span><strong>Model</strong><small>by capability</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>03</span><strong>Result</strong><small>video or image</small></div>
+        </div>
       </div>
     </section>
 
     <div class="work-content">
       <nav class="work-index" aria-label="Work by capability">
-        <p class="work-index-title">Capabilities</p>
+        <p class="work-index-title">Browse capabilities <span>06</span></p>
         <a href="#restyling"><span>01</span> Video restyling</a>
         <a href="#lipsync"><span>02</span> Lip sync</a>
         <a href="#editing"><span>03</span> Video editing</a>
@@ -57,7 +64,7 @@ styles_version: 2
           </header>
 
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p></header>
+            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p><span class="model-count">04 examples</span></header>
             <div class="media-grid">
               {% include work_video.html file="ltx-restyle-threshold-comparison.mp4" label="Threshold study" detail="Input / output · 0.15 threshold" %}
               {% include work_video.html file="ltx-restyle-basketball-four-way.mp4" label="Basketball style transfer" detail="Anime · Minecraft · Spider-Man · sketch" %}
@@ -67,7 +74,7 @@ styles_version: 2
           </div>
 
           <div class="model-group">
-            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p></header>
+            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p><span class="model-count">01 example</span></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="minimax-restyle-car-scene.mp4" label="Car scene" detail="Original + stylized results" %}
             </div>
