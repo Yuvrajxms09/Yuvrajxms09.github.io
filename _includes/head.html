@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
   {%- if page.styles -%}
     {%- for stylesheet in page.styles -%}
-  <link rel="stylesheet" href="{{ "/assets/css/" | append: stylesheet | append: ".css" | relative_url }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/" | append: stylesheet | append: ".css" | relative_url }}?v={{ page.styles_version | default: 1 }}" />
     {%- endfor -%}
   {%- endif -%}
 </head>

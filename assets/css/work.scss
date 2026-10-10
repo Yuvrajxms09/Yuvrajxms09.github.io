@@ -17,7 +17,7 @@ $accent: #386a36;
 }
 
 .work-site *, .work-site *::before, .work-site *::after { box-sizing: border-box; }
-.work-site h1, .work-site h2, .work-site h3, .work-site h4, .work-site h5, .work-site h6 { color: $ink; font-family: inherit; }
+.work-site h1, .work-site h2, .work-site h3, .work-site h4, .work-site h5, .work-site h6 { color: $ink !important; font-family: inherit; }
 .work-site a { color: inherit; }
 .work-site img { display: block; max-width: 100%; height: auto; margin: 0; }
 .work-site a:focus-visible, .work-site video:focus-visible { outline: 3px solid $accent; outline-offset: 4px; }
