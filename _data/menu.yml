@@ -2,9 +2,6 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
  
 entries:
-  - title: '<b><span style="color: #1DB954;">selected work</span></b>'
-    url: /work/
-
   - title: '<b><span style="color: #1DB954;">explore</span></b>'
     entries:
       - title: my work experience... >
