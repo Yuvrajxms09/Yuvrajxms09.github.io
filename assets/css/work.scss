@@ -14,9 +14,9 @@ $blue: #dce9ec;
   min-height: 100vh;
   background-color: $paper;
   background-image:
-    linear-gradient(rgba(40, 58, 46, .045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(40, 58, 46, .045) 1px, transparent 1px);
-  background-size: 36px 36px;
+    linear-gradient(rgba(40, 58, 46, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 58, 46, .055) 1px, transparent 1px);
+  background-size: 40px 40px;
   color: $ink;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 15px;
@@ -64,8 +64,9 @@ $blue: #dce9ec;
 }
 .work-kicker { display: flex; align-items: center; gap: 9px; margin: 0 0 24px; color: $green; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #698b63; box-shadow: 0 0 0 4px rgba(105, 139, 99, .13); }
-.work-intro h1 { max-width: 850px; margin: 0; font-size: clamp(54px, 7.5vw, 106px); font-weight: 630; letter-spacing: -.075em; line-height: .96; }
+.work-intro h1 { max-width: 850px; margin: 0; font-size: clamp(40px, 5.7vw, 78px); font-weight: 630; letter-spacing: -.075em; line-height: .98; }
 .work-intro h1 br { display: block; }
+.work-title-mark { white-space: nowrap; background-image: linear-gradient(transparent 78%, rgba(243, 232, 180, .82) 78%); }
 .work-intro-copy { max-width: 530px; }
 .work-intro-copy > p { max-width: 490px; margin: 0 0 28px; color: #414840; font-size: clamp(17px, 1.8vw, 21px); line-height: 1.48; }
 .work-context { display: grid; grid-template-columns: 84px 1fr; row-gap: 9px; margin: 0; padding: 18px 0 0; border-top: 1px solid $line; font-size: 12px; }
@@ -73,8 +74,11 @@ $blue: #dce9ec;
 .work-context dt { padding-top: 2px; font-size: 9px; }
 .work-context dd { margin: 0; color: #414840; }
 
-.workflow-strip { display: grid; grid-template-columns: 1fr 26px 1fr 26px 1fr; align-items: center; gap: 4px; margin-top: 25px; padding: 15px 17px; border: 1px solid rgba(23, 27, 24, .78); border-radius: 16px; background: rgba(255, 255, 255, .82); }
-.workflow-strip > div { display: grid; grid-template-columns: auto 1fr; gap: 1px 8px; align-items: baseline; }
+.workflow-strip { display: grid; grid-template-columns: 1fr 26px 1fr 26px 1fr; align-items: center; gap: 4px; margin-top: 25px; padding: 10px; border: 1px solid rgba(23, 27, 24, .78); border-radius: 16px; background: rgba(255, 255, 255, .82); }
+.workflow-strip > div { display: grid; grid-template-columns: auto 1fr; gap: 1px 8px; align-items: baseline; padding: 9px 8px; border-radius: 9px; }
+.workflow-strip > div:nth-of-type(1) { background: rgba(220, 235, 227, .85); }
+.workflow-strip > div:nth-of-type(2) { background: rgba(220, 233, 236, .88); }
+.workflow-strip > div:nth-of-type(3) { background: rgba(243, 232, 180, .72); }
 .workflow-strip span { color: $green; font-size: 8px; }
 .workflow-strip strong { font-size: 12px; font-weight: 650; }
 .workflow-strip small { grid-column: 2; color: $muted; font-size: 10px; }
@@ -88,12 +92,15 @@ $blue: #dce9ec;
 .work-index a span { color: #929a91; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; padding-top: 3px; }
 .work-index a:hover { color: $ink; background: rgba(220, 235, 227, .72); }
 
-.work-project { padding: clamp(23px, 3vw, 38px); margin: 0 0 26px; border: 1px solid #dce1d9; border-radius: 22px; background: rgba(255, 255, 255, .88); box-shadow: 0 10px 30px rgba(37, 51, 40, .035); scroll-margin-top: 28px; }
-.work-project:nth-child(3n + 2) { background: rgba(255, 255, 255, .92); }
+.work-project { padding: clamp(23px, 3vw, 38px); margin: 0 0 26px; border: 1px solid rgba(23, 27, 24, .2); border-radius: 22px; background: rgba(220, 235, 227, .9); box-shadow: 0 5px 0 rgba(37, 51, 40, .06); scroll-margin-top: 28px; }
+.work-project:nth-child(3n + 2) { background: rgba(243, 232, 180, .48); }
+.work-project:nth-child(3n) { background: rgba(220, 233, 236, .88); }
+.work-project:target { border-color: $green; box-shadow: 0 0 0 3px rgba(49, 91, 67, .12); }
 .work-project-heading { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 16px; padding-bottom: 27px; border-bottom: 1px solid $line; }
 .work-number { display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 1px solid #a3b5a5; border-radius: 50%; background: $mint; color: $green; font-size: 9px; }
 .work-eyebrow { margin: 0 0 8px; color: $green; font-size: 9px; }
 .work-project-heading h2 { margin: 0; font-size: clamp(30px, 3.5vw, 46px); font-weight: 630; letter-spacing: -.055em; line-height: 1.03; }
+.work-project-heading h2::after { display: block; width: clamp(48px, 8vw, 82px); height: 3px; margin-top: 10px; border-radius: 999px; background: $butter; content: ""; }
 .work-summary { max-width: 680px; margin: 11px 0 0; color: $muted; font-size: 13px; line-height: 1.55; }
 
 .model-group { margin-top: 27px; }
@@ -126,9 +133,9 @@ $blue: #dce9ec;
 .work-image figcaption { align-items: baseline; }
 .work-image img { width: 100%; border-radius: 8px; }
 .image-study-stack { display: grid; gap: 10px; }
-.work-footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 36px; color: $muted; font-size: 11px; }
-.work-footer a { padding: 8px 15px; border: 1px solid $ink; border-radius: 999px; background: $ink; color: #fff; text-decoration: none; }
-.work-footer a:hover { background: $green; }
+.work-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 34px max(32px, calc((100% - 1380px) / 2)); margin-top: 38px; background: $green; color: #fff; font-size: 13px; }
+.work-footer a { padding: 11px 20px; border: 1px solid $ink; border-radius: 999px; background: $butter; color: $ink; font-weight: 650; text-decoration: none; transition: transform .18s ease, background-color .18s ease; }
+.work-footer a:hover { background: #fff; transform: translateY(-2px); }
 
 @media (max-width: 1000px) {
   .work-shell { width: min(100% - 48px, 1380px); }
@@ -150,7 +157,7 @@ $blue: #dce9ec;
   .work-nav a { padding: 7px 9px; font-size: 10px; }
   .work-nav a:nth-child(2), .work-nav a:nth-child(3) { display: none; }
   .work-intro { gap: 26px; padding: 67px 0 40px; }
-  .work-intro h1 { font-size: clamp(44px, 12vw, 68px); }
+  .work-intro h1 { font-size: clamp(38px, 10vw, 56px); }
   .work-intro-copy > p { font-size: 16px; }
   .work-context { grid-template-columns: 76px 1fr; }
   .workflow-strip { grid-template-columns: 1fr 12px 1fr 12px 1fr; gap: 2px; padding: 12px 10px; border-radius: 13px; }
@@ -177,7 +184,7 @@ $blue: #dce9ec;
   .comparison-media .work-media figcaption { font-size: 8px; }
   .image-study { grid-template-columns: 1fr; gap: 10px; }
   .work-media figcaption, .work-image figcaption { font-size: 10px; }
-  .work-footer { align-items: flex-start; flex-direction: column; gap: 10px; padding-top: 14px; }
+  .work-footer { align-items: flex-start; flex-direction: column; gap: 14px; padding: 24px 14px; margin-top: 22px; }
 }
 
 @media (max-width: 390px) {
