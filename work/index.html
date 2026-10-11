@@ -196,10 +196,10 @@ styles_version: 6
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>MagicHour · H3</h3><p>Original, MagicHour, and H3</p></header>
+            <header class="model-heading"><h3>H3</h3><p>Source and output comparison</p></header>
             <div class="media-grid">
-              {% include work_video.html file="deadpool-maghour-vs-h3.mp4" label="Deadpool" detail="Original / MagicHour / H3" %}
-              {% include work_video.html file="peter-parker-maghour-vs-h3.mp4" label="Peter Parker" detail="Original / MagicHour / H3" %}
+              {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / H3 output" %}
+              {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / H3 output" %}
             </div>
           </div>
           <div class="model-group">
@@ -216,27 +216,14 @@ styles_version: 6
             <div>
               <p class="work-eyebrow">Image generation</p>
               <h2 id="image-title">Image workflows</h2>
-              <p class="work-summary">Klein 4B experiments across live webcam editing and consistent multi-angle image generation.</p>
+              <p class="work-summary">Klein 4B experiments with a live webcam editing workflow.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>Flux Klein 4B</h3><p>Live workflow · multi-angle generation</p></header>
+            <header class="model-heading"><h3>Flux Klein 4B</h3><p>Live webcam editing</p></header>
             <div class="media-grid">
               {% include work_video.html file="flux-klein-webcam-comparison.mp4" label="Webcam editing" detail="Live input → latest output" %}
               {% include work_video.html file="flux-klein-webcam-session.mp4" label="Workflow session" detail="Klein 4B" %}
-            </div>
-            <div class="image-study">
-              <figure class="work-image">
-                <figcaption><span>Multi-angle output</span><span>Front · side · rear · overhead</span></figcaption>
-                <img src="{{ '/assets/work/images/flux-klein-multi-angle-main.png' | relative_url }}" alt="A generated classic car from front, side, rear, and overhead camera angles" loading="lazy" />
-              </figure>
-              <figure class="work-image">
-                <figcaption><span>Additional camera angles</span><span>Generated view studies</span></figcaption>
-                <div class="image-study-stack">
-                  <img src="{{ '/assets/work/images/flux-klein-multi-angle-extended.png' | relative_url }}" alt="Extended sheet of generated car camera angles" loading="lazy" />
-                  <img src="{{ '/assets/work/images/flux-klein-multi-angle-detail.png' | relative_url }}" alt="Additional generated car view studies" loading="lazy" />
-                </div>
-              </figure>
             </div>
           </div>
         </section>

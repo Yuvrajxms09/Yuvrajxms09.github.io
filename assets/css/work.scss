@@ -118,9 +118,9 @@ html { scroll-behavior: smooth; }
 .media-grid-wide { grid-template-columns: minmax(0, 1fr); }
 .work-media { min-width: 0; margin: 0; padding: 9px; border: 1px solid #e1e4de; border-radius: 14px; background: #fbfcfa; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
 .work-media:hover { transform: translateY(-2px); border-color: #b5c7b8; box-shadow: 0 10px 24px rgba(37, 51, 40, .08); }
-.work-media figcaption, .work-image figcaption { display: flex; justify-content: space-between; gap: 12px; min-height: 25px; padding: 1px 2px 8px; color: #303830; font-size: 11px; }
-.work-media figcaption span:first-child, .work-image figcaption span:first-child { font-weight: 650; }
-.work-media figcaption span:last-child, .work-image figcaption span:last-child { color: $muted; text-align: right; }
+.work-media figcaption { display: flex; justify-content: space-between; gap: 12px; min-height: 25px; padding: 1px 2px 8px; color: #303830; font-size: 11px; }
+.work-media figcaption span:first-child { font-weight: 650; }
+.work-media figcaption span:last-child { color: $muted; text-align: right; }
 .work-media video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: #121714; object-fit: contain; }
 .work-media--basketball-transfer video { aspect-ratio: 1600 / 616; }
 .work-media--film-restyle video { aspect-ratio: 1920 / 356; }
@@ -135,11 +135,6 @@ html { scroll-behavior: smooth; }
 .comparison-media .work-media figcaption span:first-child { padding: 3px 8px; border-radius: 999px; background: $blue; }
 .comparison-media .work-media:nth-child(2) figcaption span:first-child { background: $butter; }
 
-.image-study { display: grid; grid-template-columns: 1.1fr .9fr; gap: 14px; margin-top: 20px; }
-.work-image { min-width: 0; margin: 0; padding: 10px; border: 1px solid #e1e4de; border-radius: 14px; background: #fbfcfa; }
-.work-image figcaption { align-items: baseline; }
-.work-image img { width: 100%; border-radius: 8px; }
-.image-study-stack { display: grid; gap: 10px; }
 .work-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 34px max(32px, calc((100% - 1380px) / 2)); margin-top: 38px; background: $green; color: #fff; font-size: 13px; }
 .work-footer a { padding: 11px 20px; border: 1px solid $ink; border-radius: 999px; background: $butter; color: $ink; font-weight: 650; text-decoration: none; transition: transform .18s ease, background-color .18s ease; }
 .work-footer a:hover { background: #fff; transform: translateY(-2px); }
@@ -189,8 +184,7 @@ html { scroll-behavior: smooth; }
   .comparison-media { gap: 7px; }
   .comparison-media .work-media { padding: 6px; }
   .comparison-media .work-media figcaption { font-size: 8px; }
-  .image-study { grid-template-columns: 1fr; gap: 10px; }
-  .work-media figcaption, .work-image figcaption { font-size: 10px; }
+  .work-media figcaption { font-size: 10px; }
   .work-footer { align-items: flex-start; flex-direction: column; gap: 14px; padding: 24px 14px; margin-top: 22px; }
 }
 
@@ -224,14 +218,9 @@ html { scroll-behavior: smooth; }
   .workflow-strip i:nth-of-type(2) { animation-delay: .98s; }
   .work-site.has-scroll-motion .work-project { opacity: 0; transform: translateY(18px); transition: opacity .62s ease, transform .62s cubic-bezier(.2, .7, .2, 1); }
   .work-site.has-scroll-motion .work-project.is-visible { opacity: 1; transform: translateY(0); }
-  .work-site.has-scroll-motion .work-media,
-  .work-site.has-scroll-motion .work-image { opacity: 0; transform: translateY(10px); transition: opacity .4s ease, transform .4s cubic-bezier(.2, .7, .2, 1); }
-  .work-site.has-scroll-motion .work-project.is-visible .work-media,
-  .work-site.has-scroll-motion .work-project.is-visible .work-image { opacity: 1; transform: translateY(0); }
-  .work-site.has-scroll-motion .work-media:nth-child(2),
-  .work-site.has-scroll-motion .work-image:nth-child(2) { transition-delay: .08s; }
-  .work-site.has-scroll-motion .work-media:nth-child(3),
-  .work-site.has-scroll-motion .work-image:nth-child(3) { transition-delay: .15s; }
-  .work-site.has-scroll-motion .work-media:nth-child(4),
-  .work-site.has-scroll-motion .work-image:nth-child(4) { transition-delay: .22s; }
+  .work-site.has-scroll-motion .work-media { opacity: 0; transform: translateY(10px); transition: opacity .4s ease, transform .4s cubic-bezier(.2, .7, .2, 1); }
+  .work-site.has-scroll-motion .work-project.is-visible .work-media { opacity: 1; transform: translateY(0); }
+  .work-site.has-scroll-motion .work-media:nth-child(2) { transition-delay: .08s; }
+  .work-site.has-scroll-motion .work-media:nth-child(3) { transition-delay: .15s; }
+  .work-site.has-scroll-motion .work-media:nth-child(4) { transition-delay: .22s; }
 }
