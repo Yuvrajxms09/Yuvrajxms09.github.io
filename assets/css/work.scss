@@ -115,12 +115,15 @@ html { scroll-behavior: smooth; }
 
 .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .media-grid-single { grid-template-columns: minmax(0, 1fr); max-width: 690px; }
+.media-grid-wide { grid-template-columns: minmax(0, 1fr); }
 .work-media { min-width: 0; margin: 0; padding: 9px; border: 1px solid #e1e4de; border-radius: 14px; background: #fbfcfa; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
 .work-media:hover { transform: translateY(-2px); border-color: #b5c7b8; box-shadow: 0 10px 24px rgba(37, 51, 40, .08); }
 .work-media figcaption, .work-image figcaption { display: flex; justify-content: space-between; gap: 12px; min-height: 25px; padding: 1px 2px 8px; color: #303830; font-size: 11px; }
 .work-media figcaption span:first-child, .work-image figcaption span:first-child { font-weight: 650; }
 .work-media figcaption span:last-child, .work-image figcaption span:last-child { color: $muted; text-align: right; }
 .work-media video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: #121714; object-fit: contain; }
+.work-media--basketball-transfer video { aspect-ratio: 1600 / 616; }
+.work-media--film-restyle video { aspect-ratio: 1920 / 356; }
 
 .comparison-list { display: grid; gap: 14px; }
 .comparison-row { display: grid; grid-template-columns: 158px minmax(0, 1fr); gap: 15px; align-items: start; padding: 14px 0 0; border-top: 1px solid $line; }

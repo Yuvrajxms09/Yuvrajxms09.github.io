@@ -64,12 +64,13 @@ styles_version: 6
           </header>
 
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p><span class="model-count">04 examples</span></header>
-            <div class="media-grid">
+            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p><span class="model-count">03 examples</span></header>
+            <div class="media-grid media-grid-single">
               {% include work_video.html file="ltx-restyle-threshold-comparison.mp4" label="Threshold study" detail="Input / output · 0.15 threshold" %}
-              {% include work_video.html file="ltx-restyle-basketball-four-way.mp4" label="Basketball style transfer" detail="Anime · Minecraft · Spider-Man · sketch" %}
-              {% include work_video.html file="ltx-restyle-film-part-1.mp4" label="Film restyle · part 1" detail="Original + 3 styles" %}
-              {% include work_video.html file="ltx-restyle-film-part-2.mp4" label="Film restyle · part 2" detail="Original + 3 styles" %}
+            </div>
+            <div class="media-grid media-grid-wide">
+              {% include work_video.html file="ltx-restyle-basketball-side-by-side.mp4" label="Basketball style transfer" detail="Input · Anime · Minecraft · Spider-Man · Sketch" variant="basketball-transfer" %}
+              {% include work_video.html file="ltx-restyle-film-selected-five.mp4" label="Film restyling" detail="Anime · Minecraft · Comic Book · Oil Painting · Watercolor" variant="film-restyle" %}
             </div>
           </div>
 
