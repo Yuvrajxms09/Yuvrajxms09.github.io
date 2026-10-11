@@ -129,6 +129,7 @@ html { scroll-behavior: smooth; }
 .work-media--basketball-transfer video { aspect-ratio: 1600 / 616; }
 .work-media--film-restyle video { aspect-ratio: 1920 / 356; }
 .work-media--video-edit-comparison video { aspect-ratio: 1920 / 910; }
+.work-media--lipsync-output video { height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #eef1ec; }
 
 .comparison-list { display: grid; gap: 14px; }
 .comparison-row { display: grid; grid-template-columns: 158px minmax(0, 1fr); gap: 15px; align-items: start; padding: 14px 0 0; border-top: 1px solid $line; }
