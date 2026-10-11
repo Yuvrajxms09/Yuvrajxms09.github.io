@@ -3,5 +3,10 @@
   {%- include head.html -%}
   <body class="work-site">
     {{ content }}
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script src="{{ '/assets/js/' | append: js_file | append: '.js' | relative_url }}?v={{ page.styles_version | default: 1 }}"></script>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>
