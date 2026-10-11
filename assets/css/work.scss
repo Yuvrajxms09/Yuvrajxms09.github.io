@@ -121,7 +121,7 @@ html { scroll-behavior: smooth; }
 .work-media figcaption { display: flex; justify-content: space-between; gap: 12px; min-height: 25px; padding: 1px 2px 8px; color: #303830; font-size: 11px; }
 .work-media figcaption span:first-child { font-weight: 650; }
 .work-media figcaption span:last-child { color: $muted; text-align: right; }
-.work-media video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: #121714; object-fit: contain; }
+.work-media video { display: block; width: 100%; height: auto; aspect-ratio: auto; border-radius: 8px; background: #121714; }
 .work-media--basketball-transfer video { aspect-ratio: 1600 / 616; }
 .work-media--film-restyle video { aspect-ratio: 1920 / 356; }
 
