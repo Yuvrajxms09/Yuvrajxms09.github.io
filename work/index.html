@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 7
+styles_version: 8
 custom_js:
   - work_video_controls
 ---
@@ -130,16 +130,15 @@ custom_js:
             <div>
               <p class="work-eyebrow">Video generation</p>
               <h2 id="editing-title">Video editing</h2>
-              <p class="work-summary">Prompted edits to objects and scenes, with the original and edited results shown together.</p>
+              <p class="work-summary">Prompted scene changes, object edits, and removals. Each comparison keeps the input first, followed by three LTX outputs.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p></header>
-            <div class="media-grid">
-              {% include work_video.html file="ltx-edit-car-removal.mp4" label="Object removal" detail="Remove car · pole · tree · wall" %}
-              {% include work_video.html file="ltx-edit-car-variations.mp4" label="Scene variations" detail="Weather · background · lighting" %}
-              {% include work_video.html file="ltx-edit-car-three-way.mp4" label="Prompted edits" detail="Three-way comparison" %}
-              {% include work_video.html file="ltx-edit-bicycle-removal.mp4" label="Object removal" detail="Remove bicycle" %}
+            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p><span class="model-count">03 comparisons</span></header>
+            <div class="media-grid media-grid-wide">
+              {% include work_video.html file="ltx-edit-car-scene-edits.mp4" label="Scene edits" detail="Input · Rain · Sunset · Pink foliage" variant="video-edit-comparison" %}
+              {% include work_video.html file="ltx-edit-car-object-edits.mp4" label="Object edits" detail="Input · Add birds · Add roof box · Replace with superbike" variant="video-edit-comparison" %}
+              {% include work_video.html file="ltx-edit-car-removal.mp4" label="Removal" detail="Input · Remove car · Remove fence · Remove trees" variant="video-edit-comparison" %}
             </div>
           </div>
         </section>
