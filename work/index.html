@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 9
+styles_version: 10
 custom_js:
   - work_video_controls
 ---
@@ -16,36 +16,17 @@ custom_js:
       <a class="work-nav-current" href="{{ '/work/' | relative_url }}" aria-current="page">Work</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
       <a href="https://github.com/Yuvrajxms09">GitHub</a>
-      <a href="mailto:singhyuvrajf1@gmail.com">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="work-intro" aria-labelledby="work-title">
-      <div>
-        <p class="work-kicker"><span class="status-dot" aria-hidden="true"></span> Machine learning engineer</p>
-        <h1 id="work-title">Model <span class="work-title-mark">workflows</span><br />&amp; inference systems</h1>
-      </div>
-      <div class="work-intro-copy">
-        <p>I work on inference performance and build end-to-end workflows around image and video models.</p>
-        <dl class="work-context">
-          <div><dt>Current</dt><dd>Magic Hour</dd></div>
-          <div><dt>Previous</dt><dd>Dria · Eachlabs</dd></div>
-          <div><dt>Focus</dt><dd>Model integration · workflow design · evaluation</dd></div>
-        </dl>
-        <div class="workflow-strip" aria-label="Work examples show source material where available, the model, and its result">
-          <div><span>01</span><strong>Source</strong><small>when available</small></div>
-          <i aria-hidden="true"></i>
-          <div><span>02</span><strong>Model</strong><small>by capability</small></div>
-          <i aria-hidden="true"></i>
-          <div><span>03</span><strong>Result</strong><small>video or image</small></div>
-        </div>
-      </div>
+      <h1 id="work-title">Selected work</h1>
     </section>
 
     <div class="work-content">
-      <nav class="work-index" aria-label="Work by capability">
-        <p class="work-index-title">Browse capabilities <span>06</span></p>
+      <nav class="work-index" aria-label="Work sections">
+        <p class="work-index-title">On this page</p>
         <a href="#editing"><span>01</span> Video editing</a>
         <a href="#character-replacement"><span>02</span> Character replacement</a>
         <a href="#restyling"><span>03</span> Video restyling</a>
@@ -59,13 +40,12 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">01</span>
             <div>
-              <p class="work-eyebrow">Video generation</p>
               <h2 id="editing-title">Video editing</h2>
-              <p class="work-summary">Prompted scene changes, object edits, and removals. Each comparison keeps the input first, followed by three LTX outputs.</p>
+              <p class="work-summary">LTX edits to one source clip: scene changes, object changes, and removals.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p><span class="model-count">03 comparisons</span></header>
+            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p></header>
             <div class="media-grid media-grid-wide">
               {% include work_video.html file="ltx-edit-car-scene-edits.mp4" label="Scene edits" detail="Input · Rain · Sunset · Pink foliage" variant="video-edit-comparison" %}
               {% include work_video.html file="ltx-edit-car-object-edits.mp4" label="Object edits" detail="Input · Add birds · Add roof box · Replace with superbike" variant="video-edit-comparison" %}
@@ -78,13 +58,12 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">02</span>
             <div>
-              <p class="work-eyebrow">Model comparison</p>
               <h2 id="character-title">Character replacement</h2>
-              <p class="work-summary">Compare identity-transfer results from different model pipelines against the original footage.</p>
+              <p class="work-summary">H3 character replacement results against their source clips.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>H3</h3><p>Source and output comparison</p></header>
+            <header class="model-heading"><h3>H3</h3><p>Character replacement output</p></header>
             <div class="media-grid">
               {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / H3 output" %}
               {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / H3 output" %}
@@ -102,14 +81,13 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">03</span>
             <div>
-              <p class="work-eyebrow">Video generation</p>
               <h2 id="restyling-title">Video restyling</h2>
-              <p class="work-summary">Restyle source footage while retaining its subjects, action, and framing. Examples are grouped by task, with each model shown separately.</p>
+              <p class="work-summary">LTX style transfers, plus a Minimax car scene.</p>
             </div>
           </header>
 
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Style transfer · parameter study</p><span class="model-count">03 examples</span></header>
+            <header class="model-heading"><h3>LTX</h3><p>Style transfer · threshold study</p></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="ltx-restyle-threshold-comparison.mp4" label="Threshold study" detail="Input / output · 0.15 threshold" %}
             </div>
@@ -120,7 +98,7 @@ custom_js:
           </div>
 
           <div class="model-group">
-            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p><span class="model-count">01 example</span></header>
+            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="minimax-restyle-car-scene.mp4" label="Car scene" detail="Original + stylized results" %}
             </div>
@@ -131,26 +109,25 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">04</span>
             <div>
-              <p class="work-eyebrow">Video generation</p>
               <h2 id="outpainting-title">Video outpainting</h2>
-              <p class="work-summary">Extend the frame around existing footage while keeping the subject and motion in view.</p>
+              <p class="work-summary">The source frames were expanded to portrait. Each input is trimmed to the opening ~5 seconds shown in its output.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Two source-to-result examples</p></header>
+            <header class="model-heading"><h3>LTX</h3><p>Frame expansion · landscape to portrait</p></header>
             <div class="comparison-list">
               <div class="comparison-row">
-                <div class="comparison-title"><h4>10 Things I Hate About You</h4><p>Julia</p></div>
+                <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>768 × 576 (4:3) → 768 × 1344 (4:7)</p></div>
                 <div class="comparison-media">
-                  {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" %}
-                  {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" %}
+                  {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" variant="outpainting-comparison" %}
                 </div>
               </div>
               <div class="comparison-row">
-                <div class="comparison-title"><h4>Tom Cruise</h4><p>Eyes Wide Shut</p></div>
+                <div class="comparison-title"><h4>Eyes Wide Shut · Tom Cruise</h4><p>854 × 480 (16:9) → 832 × 1504 (26:47)</p></div>
                 <div class="comparison-media">
-                  {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" %}
-                  {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" %}
+                  {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" variant="outpainting-comparison" %}
                 </div>
               </div>
             </div>
@@ -161,9 +138,8 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">05</span>
             <div>
-              <p class="work-eyebrow">Audio-driven video</p>
               <h2 id="lipsync-title">Lip sync</h2>
-              <p class="work-summary">Audio-driven facial motion, grouped by model and workflow.</p>
+              <p class="work-summary">LTX V2V and Minimax R2V results.</p>
             </div>
           </header>
 
@@ -188,13 +164,12 @@ custom_js:
           <header class="work-project-heading">
             <span class="work-number">06</span>
             <div>
-              <p class="work-eyebrow">Image generation</p>
               <h2 id="image-title">Image workflows</h2>
-              <p class="work-summary">Klein 4B experiments with a live webcam editing workflow.</p>
+              <p class="work-summary">Live webcam edits with Flux Klein 4B.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>Flux Klein 4B</h3><p>Live webcam editing</p></header>
+            <header class="model-heading"><h3>Flux Klein 4B</h3></header>
             <div class="media-grid">
               {% include work_video.html file="flux-klein-webcam-comparison.mp4" label="Webcam editing" detail="Live input → latest output" %}
               {% include work_video.html file="flux-klein-webcam-session.mp4" label="Workflow session" detail="Klein 4B" %}
@@ -205,9 +180,5 @@ custom_js:
     </div>
   </main>
 
-  <footer class="work-footer">
-    <span>Yuvraj Singh · Machine learning engineer</span>
-    <a href="mailto:singhyuvrajf1@gmail.com">Contact</a>
-  </footer>
 <script src="{{ '/assets/js/work.js' | relative_url }}?v=2" defer></script>
 </div>
