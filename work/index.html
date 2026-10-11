@@ -110,24 +110,24 @@ custom_js:
             <span class="work-number">04</span>
             <div>
               <h2 id="outpainting-title">Video outpainting</h2>
-              <p class="work-summary">The source frames were expanded to portrait. Each input is trimmed to the opening ~5 seconds shown in its output.</p>
+              <p class="work-summary">LTX expands the source frame to portrait; each input shows the matching five-second segment.</p>
             </div>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Frame expansion · landscape to portrait</p></header>
+            <header class="model-heading"><h3>LTX</h3><p>Portrait frame expansion</p></header>
             <div class="comparison-list">
               <div class="comparison-row">
-                <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>768 × 576 (4:3) → 768 × 1344 (4:7)</p></div>
+                <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>4:3 → 4:7</p></div>
                 <div class="comparison-media">
-                  {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" variant="outpainting-comparison" %}
-                  {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" detail="768 × 576" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" detail="768 × 1344" variant="outpainting-comparison" %}
                 </div>
               </div>
               <div class="comparison-row">
-                <div class="comparison-title"><h4>Eyes Wide Shut · Tom Cruise</h4><p>854 × 480 (16:9) → 832 × 1504 (26:47)</p></div>
+                <div class="comparison-title"><h4>Eyes Wide Shut · Tom Cruise</h4><p>16:9 → 26:47</p></div>
                 <div class="comparison-media">
-                  {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" variant="outpainting-comparison" %}
-                  {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" detail="854 × 480" variant="outpainting-comparison" %}
+                  {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" detail="832 × 1504" variant="outpainting-comparison" %}
                 </div>
               </div>
             </div>
