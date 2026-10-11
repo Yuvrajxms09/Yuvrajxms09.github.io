@@ -46,18 +46,61 @@ custom_js:
     <div class="work-content">
       <nav class="work-index" aria-label="Work by capability">
         <p class="work-index-title">Browse capabilities <span>06</span></p>
-        <a href="#restyling"><span>01</span> Video restyling</a>
-        <a href="#lipsync"><span>02</span> Lip sync</a>
-        <a href="#editing"><span>03</span> Video editing</a>
+        <a href="#editing"><span>01</span> Video editing</a>
+        <a href="#character-replacement"><span>02</span> Character replacement</a>
+        <a href="#restyling"><span>03</span> Video restyling</a>
         <a href="#outpainting"><span>04</span> Video outpainting</a>
-        <a href="#character-replacement"><span>05</span> Character replacement</a>
+        <a href="#lipsync"><span>05</span> Lip sync</a>
         <a href="#image-workflows"><span>06</span> Image workflows</a>
       </nav>
 
       <div class="work-projects">
-        <section class="work-project" id="restyling" aria-labelledby="restyling-title">
+        <section class="work-project" id="editing" aria-labelledby="editing-title">
           <header class="work-project-heading">
             <span class="work-number">01</span>
+            <div>
+              <p class="work-eyebrow">Video generation</p>
+              <h2 id="editing-title">Video editing</h2>
+              <p class="work-summary">Prompted scene changes, object edits, and removals. Each comparison keeps the input first, followed by three LTX outputs.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p><span class="model-count">03 comparisons</span></header>
+            <div class="media-grid media-grid-wide">
+              {% include work_video.html file="ltx-edit-car-scene-edits.mp4" label="Scene edits" detail="Input · Rain · Sunset · Pink foliage" variant="video-edit-comparison" %}
+              {% include work_video.html file="ltx-edit-car-object-edits.mp4" label="Object edits" detail="Input · Add birds · Add roof box · Replace with superbike" variant="video-edit-comparison" %}
+              {% include work_video.html file="ltx-edit-car-removal-comparison.mp4" label="Removal" detail="Input · Remove car · Remove fence · Remove trees" variant="video-edit-comparison" %}
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="character-replacement" aria-labelledby="character-title">
+          <header class="work-project-heading">
+            <span class="work-number">02</span>
+            <div>
+              <p class="work-eyebrow">Model comparison</p>
+              <h2 id="character-title">Character replacement</h2>
+              <p class="work-summary">Compare identity-transfer results from different model pipelines against the original footage.</p>
+            </div>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>H3</h3><p>Source and output comparison</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / H3 output" %}
+              {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / H3 output" %}
+            </div>
+          </div>
+          <div class="model-group">
+            <header class="model-heading"><h3>MM7 · H3</h3><p>Side-by-side comparison</p></header>
+            <div class="media-grid media-grid-single">
+              {% include work_video.html file="michael-jackson-mm7-vs-h3.mp4" label="Michael Jackson" detail="MM7 / H3" %}
+            </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="restyling" aria-labelledby="restyling-title">
+          <header class="work-project-heading">
+            <span class="work-number">03</span>
             <div>
               <p class="work-eyebrow">Video generation</p>
               <h2 id="restyling-title">Video restyling</h2>
@@ -80,65 +123,6 @@ custom_js:
             <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p><span class="model-count">01 example</span></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="minimax-restyle-car-scene.mp4" label="Car scene" detail="Original + stylized results" %}
-            </div>
-          </div>
-        </section>
-
-        <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
-          <header class="work-project-heading">
-            <span class="work-number">02</span>
-            <div>
-              <p class="work-eyebrow">Audio-driven video</p>
-              <h2 id="lipsync-title">Lip sync</h2>
-              <p class="work-summary">Audio-driven facial motion, shown as source-to-result pairs where both clips are available.</p>
-            </div>
-          </header>
-
-          <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Video-to-video lip sync</p></header>
-            <div class="comparison-list">
-              <div class="comparison-row">
-                <div class="comparison-title"><h4>Ronaldo</h4><p>Source and result</p></div>
-                <div class="comparison-media">
-                  {% include work_video.html file="ltx-lipsync-ronaldo-input.mp4" label="Input" %}
-                  {% include work_video.html file="ltx-lipsync-ronaldo-output.mp4" label="Output" %}
-                </div>
-              </div>
-              <div class="comparison-row">
-                <div class="comparison-title"><h4>Speaking clip</h4><p>LTX-2.3 · source and result</p></div>
-                <div class="comparison-media">
-                  {% include work_video.html file="ltx-lipsync-boy-input.mp4" label="Input" %}
-                  {% include work_video.html file="ltx-lipsync-boy-output.mp4" label="Output" %}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="model-group">
-            <header class="model-heading"><h3>Minimax</h3><p>R2V · rendered examples</p></header>
-            <div class="media-grid">
-              {% include work_video.html file="minimax-lipsync-chris-evans.mp4" label="Chris Evans" detail="R2V output" %}
-              {% include work_video.html file="minimax-lipsync-robert-downey-jr.mp4" label="Robert Downey Jr." detail="R2V output" %}
-              {% include work_video.html file="minimax-lipsync-leonardo-dicaprio.mp4" label="Leonardo DiCaprio" detail="R2V output" %}
-            </div>
-          </div>
-        </section>
-
-        <section class="work-project" id="editing" aria-labelledby="editing-title">
-          <header class="work-project-heading">
-            <span class="work-number">03</span>
-            <div>
-              <p class="work-eyebrow">Video generation</p>
-              <h2 id="editing-title">Video editing</h2>
-              <p class="work-summary">Prompted scene changes, object edits, and removals. Each comparison keeps the input first, followed by three LTX outputs.</p>
-            </div>
-          </header>
-          <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p><span class="model-count">03 comparisons</span></header>
-            <div class="media-grid media-grid-wide">
-              {% include work_video.html file="ltx-edit-car-scene-edits.mp4" label="Scene edits" detail="Input · Rain · Sunset · Pink foliage" variant="video-edit-comparison" %}
-              {% include work_video.html file="ltx-edit-car-object-edits.mp4" label="Object edits" detail="Input · Add birds · Add roof box · Replace with superbike" variant="video-edit-comparison" %}
-              {% include work_video.html file="ltx-edit-car-removal-comparison.mp4" label="Removal" detail="Input · Remove car · Remove fence · Remove trees" variant="video-edit-comparison" %}
             </div>
           </div>
         </section>
@@ -187,26 +171,29 @@ custom_js:
           </div>
         </section>
 
-        <section class="work-project" id="character-replacement" aria-labelledby="character-title">
+        <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
           <header class="work-project-heading">
             <span class="work-number">05</span>
             <div>
-              <p class="work-eyebrow">Model comparison</p>
-              <h2 id="character-title">Character replacement</h2>
-              <p class="work-summary">Compare identity-transfer results from different model pipelines against the original footage.</p>
+              <p class="work-eyebrow">Audio-driven video</p>
+              <h2 id="lipsync-title">Lip sync</h2>
+              <p class="work-summary">Audio-driven facial motion, grouped by model and workflow.</p>
             </div>
           </header>
+
           <div class="model-group">
-            <header class="model-heading"><h3>H3</h3><p>Source and output comparison</p></header>
+            <header class="model-heading"><h3>LTX</h3><p>V2V lip sync</p></header>
             <div class="media-grid">
-              {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / H3 output" %}
-              {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / H3 output" %}
+              {% include work_video.html file="ltx-lipsync-ronaldo-output.mp4" label="Ronaldo" detail="V2V output" %}
+              {% include work_video.html file="ltx-lipsync-boy-output.mp4" label="Speaking clip" detail="LTX-2.3 · V2V output" %}
             </div>
           </div>
+
           <div class="model-group">
-            <header class="model-heading"><h3>MM7 · H3</h3><p>Side-by-side comparison</p></header>
-            <div class="media-grid media-grid-single">
-              {% include work_video.html file="michael-jackson-mm7-vs-h3.mp4" label="Michael Jackson" detail="MM7 / H3" %}
+            <header class="model-heading"><h3>Minimax</h3><p>Talking-head</p></header>
+            <div class="media-grid">
+              {% include work_video.html file="minimax-lipsync-chris-evans.mp4" label="Chris Evans" detail="R2V output" %}
+              {% include work_video.html file="minimax-lipsync-robert-downey-jr.mp4" label="Robert Downey Jr." detail="R2V output" %}
             </div>
           </div>
         </section>
