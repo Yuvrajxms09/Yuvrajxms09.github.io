@@ -91,8 +91,6 @@ html { scroll-behavior: smooth; }
 .work-intro-track { display: flex; width: max-content; align-items: start; gap: clamp(14px, 2vw, 27px); transform: translate3d(0, 0, 0); }
 .work-reel-frame { display: block; flex: 0 0 clamp(245px, 30vw, 410px); color: inherit; text-decoration: none; }
 .work-reel-frame figure { margin: 0; }
-.work-reel-frame:nth-child(even) { margin-top: 20px; }
-.work-reel-frame:nth-child(3n) { margin-top: -5px; }
 .work-reel-frame img { width: 100%; aspect-ratio: 1.56; border: 1px solid rgba(23, 39, 45, .14); background: $paper; object-fit: cover; transition: border-color .22s ease; }
 .work-reel-frame figcaption { display: flex; align-items: baseline; gap: 9px; padding-top: 9px; color: $ink; font-size: 11px; letter-spacing: -.01em; }
 .work-reel-frame figcaption span { color: $accent; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; }
@@ -202,8 +200,6 @@ html { scroll-behavior: smooth; }
   .work-intro-reel { padding: 12px 0 12px 14px; mask-image: linear-gradient(90deg, #000 0%, #000 92%, transparent 100%); }
   .work-intro-track { gap: 13px; }
   .work-reel-frame { flex-basis: clamp(225px, 72vw, 320px); }
-  .work-reel-frame:nth-child(even) { margin-top: 14px; }
-  .work-reel-frame:nth-child(3n) { margin-top: 0; }
   .work-reel-frame img { aspect-ratio: 1.42; }
   .work-content { gap: 23px; padding-top: 33px; }
   .work-index { gap: 2px 15px; }
