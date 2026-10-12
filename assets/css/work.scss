@@ -84,7 +84,7 @@ html { scroll-behavior: smooth; }
   overflow: hidden;
   border-top: 1px solid rgba(32, 34, 31, .36);
   border-bottom: 1px solid rgba(32, 34, 31, .36);
-  padding: 18px 0 16px;
+  padding: 18px 0 16px clamp(14px, 4vw, 32px);
   mask-image: linear-gradient(90deg, #000 0%, #000 94%, transparent 100%);
 }
 .work-intro-track { display: flex; width: max-content; align-items: start; gap: clamp(14px, 2vw, 27px); transform: translate3d(var(--work-reel-shift, 0px), 0, 0); will-change: transform; }
@@ -174,7 +174,7 @@ html { scroll-behavior: smooth; }
   .work-intro-heading { align-items: end; gap: 12px; }
   .work-intro h1 { font-size: clamp(58px, 14vw, 88px); }
   .work-intro-count { margin-bottom: 2px; font-size: 9px; }
-  .work-intro-reel { padding: 12px 0; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 0%, #000 92%, transparent 100%); }
+  .work-intro-reel { padding: 12px 0 12px 14px; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 0%, #000 92%, transparent 100%); }
   .work-intro-reel::-webkit-scrollbar { display: none; }
   .work-intro-track { gap: 13px; transform: none; will-change: auto; }
   .work-reel-frame { flex-basis: clamp(225px, 72vw, 320px); }
