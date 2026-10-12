@@ -184,18 +184,20 @@ html { scroll-behavior: smooth; }
 .inference-latency, .inference-methods { min-width: 0; padding: clamp(18px, 2.3vw, 28px); border: 1px solid $line; }
 .inference-latency { background: rgba(255, 255, 255, .38); }
 .inference-eyebrow { margin: 0 0 19px; color: $muted; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
-.inference-latency-values { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr); align-items: stretch; gap: clamp(10px, 1.8vw, 24px); }
-.inference-latency-values::after { position: absolute; right: 0; bottom: 0; left: 0; height: 1px; background: $line; content: ""; }
-.inference-result { display: grid; min-width: 0; grid-template-rows: 14px 58px 14px 116px; align-content: start; gap: 7px; }
-.inference-result-label { grid-row: 1; color: $muted; font-size: 12px; }
-.inference-result strong { grid-row: 2; align-self: center; color: $ink; font-size: clamp(38px, 5.2vw, 62px); font-weight: 570; letter-spacing: -.075em; line-height: .92; white-space: nowrap; }
+.inference-latency-values { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.8vw, 24px); }
+.inference-result { display: grid; min-width: 0; align-content: start; gap: 7px; }
+.inference-result-label { color: $muted; font-size: 12px; }
+.inference-result strong { color: $ink; font-size: clamp(38px, 5.2vw, 62px); font-weight: 570; letter-spacing: -.075em; line-height: .92; white-space: nowrap; }
 .inference-result strong small { color: $muted; font-size: .32em; font-weight: 550; letter-spacing: -.02em; }
 .inference-result--baseline strong { color: $latency-slow; }
 .inference-result--optimized strong { color: $latency-fast; }
-.inference-arrow { grid-row: 1; grid-column: 2; justify-self: center; align-self: start; margin-top: 43px; color: $muted; font-size: 20px; }
-.inference-bar { grid-row: 4; align-self: end; justify-self: center; width: 40px; height: 100%; border-radius: 2px 2px 0 0; background: $latency-slow; }
-.inference-result--optimized .inference-bar { height: 39.5%; background: $latency-fast; }
-.inference-speedup { grid-row: 3; align-self: center; color: $latency-fast; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.inference-speedup { color: $latency-fast; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.inference-slope { display: block; width: 100%; height: 116px; margin-top: 9px; overflow: visible; }
+.inference-slope-baseline { stroke: $line; stroke-width: 1.5; }
+.inference-slope-before { stroke: $latency-slow; stroke-width: 3; stroke-linecap: round; }
+.inference-slope-after { stroke: $latency-fast; stroke-width: 3; stroke-linecap: round; }
+.inference-slope-connector { color: $muted; stroke: currentColor; stroke-width: 1.5; marker-end: url(#inference-slope-arrowhead); }
+.inference-slope-arrowhead { fill: $muted; }
 .inference-conditions { margin: 22px 0 0; padding-top: 13px; border-top: 1px solid $line; color: $muted; font-size: 12px; }
 .inference-methods .inference-eyebrow { margin-bottom: 16px; }
 .inference-methods ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
