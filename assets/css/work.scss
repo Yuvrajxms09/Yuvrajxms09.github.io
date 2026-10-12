@@ -187,8 +187,8 @@ html { scroll-behavior: smooth; }
 .inference-latency-values { display: flex; align-items: center; gap: clamp(10px, 1.8vw, 24px); }
 .inference-result { position: relative; display: grid; min-width: 0; flex: 1 1 0; gap: 7px; padding-top: 11px; }
 .inference-result::before { position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: $line; content: ""; }
-.inference-result--baseline::before { background: $latency-slow; }
-.inference-result--optimized::before { width: 39.5%; background: $latency-fast; }
+.inference-result--baseline::before { height: 5px; background: $latency-slow; }
+.inference-result--optimized::before { height: 2px; background: $latency-fast; }
 .inference-result > span:first-child { color: $muted; font-size: 12px; }
 .inference-result strong { color: $ink; font-size: clamp(38px, 5.2vw, 62px); font-weight: 570; letter-spacing: -.075em; line-height: .92; white-space: nowrap; }
 .inference-result strong small { color: $muted; font-size: .32em; font-weight: 550; letter-spacing: -.02em; }
