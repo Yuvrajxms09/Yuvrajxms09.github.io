@@ -6,6 +6,8 @@ $ink: #17272d;
 $muted: #526167;
 $line: #d5d9d6;
 $accent: #126f83;
+$latency-slow: #b54742;
+$latency-fast: #287a53;
 $video-bg: #111411;
 
 html { scroll-behavior: smooth; }
@@ -183,14 +185,17 @@ html { scroll-behavior: smooth; }
 .inference-latency { background: rgba(255, 255, 255, .38); }
 .inference-eyebrow { margin: 0 0 19px; color: $muted; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 .inference-latency-values { display: flex; align-items: center; gap: clamp(10px, 1.8vw, 24px); }
-.inference-result { display: grid; min-width: 0; flex: 1 1 0; gap: 7px; padding-top: 11px; border-top: 2px solid $line; }
+.inference-result { position: relative; display: grid; min-width: 0; flex: 1 1 0; gap: 7px; padding-top: 11px; }
+.inference-result::before { position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: $line; content: ""; }
+.inference-result--baseline::before { background: $latency-slow; }
+.inference-result--optimized::before { width: 39.5%; background: $latency-fast; }
 .inference-result > span:first-child { color: $muted; font-size: 12px; }
 .inference-result strong { color: $ink; font-size: clamp(38px, 5.2vw, 62px); font-weight: 570; letter-spacing: -.075em; line-height: .92; white-space: nowrap; }
 .inference-result strong small { color: $muted; font-size: .32em; font-weight: 550; letter-spacing: -.02em; }
-.inference-result--optimized { border-color: $accent; }
-.inference-result--optimized strong { color: $accent; }
+.inference-result--baseline strong { color: $latency-slow; }
+.inference-result--optimized strong { color: $latency-fast; }
 .inference-arrow { color: $muted; font-size: 20px; }
-.inference-speedup { color: $accent; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.inference-speedup { color: $latency-fast; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
 .inference-conditions { margin: 22px 0 0; padding-top: 13px; border-top: 1px solid $line; color: $muted; font-size: 12px; }
 .inference-methods .inference-eyebrow { margin-bottom: 16px; }
 .inference-methods ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
