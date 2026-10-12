@@ -9,7 +9,7 @@
 
   if (!projects.length || !links.length) return;
 
-  const revealTargets = Array.from(site.querySelectorAll(".work-project-heading, .model-heading, .work-media"));
+  const revealTargets = Array.from(site.querySelectorAll(".work-project-heading, .model-heading, .work-media, .inference-overview"));
   if (!reduceMotion.matches && "IntersectionObserver" in window) {
     site.classList.add("has-motion");
 

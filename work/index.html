@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 21
+styles_version: 22
 custom_js:
   - work_video_controls
 ---
@@ -26,7 +26,7 @@ custom_js:
           <p class="work-intro-lead">I work on integrating models into specific use cases, have worked directly with enterprise customers on their workflows, and also optimize inference in personal projects.</p>
           <div class="work-intro-heading">
             <h1 id="work-title">Selected <em>work</em></h1>
-            <p class="work-intro-count"><span>07</span> projects</p>
+            <p class="work-intro-count"><span>08</span> projects</p>
           </div>
         </div>
         <div class="work-intro-reel" role="region" aria-label="Selected work projects">
@@ -73,6 +73,16 @@ custom_js:
                 <figcaption><span aria-hidden="true">07</span> V2V image editing</figcaption>
               </figure>
             </a>
+            <a class="work-reel-frame work-reel-frame--benchmark" href="#inference-optimization" aria-label="Inference optimization, Flux Klein 4B, 324 to 128 milliseconds">
+              <figure>
+                <div class="work-reel-benchmark-art" aria-hidden="true">
+                  <span class="work-reel-benchmark-model">FLUX KLEIN 4B</span>
+                  <div class="work-reel-benchmark-values"><span>324</span><i>→</i><strong>128</strong></div>
+                  <span class="work-reel-benchmark-detail">ms model inference · 2.5× faster</span>
+                </div>
+                <figcaption><span aria-hidden="true">08</span> Inference optimization</figcaption>
+              </figure>
+            </a>
           </div>
         </div>
       </div>
@@ -80,7 +90,7 @@ custom_js:
 
     <div class="work-content">
       <nav class="work-index" aria-label="Work sections">
-        <p class="work-index-title"><span>Sections</span><span class="work-index-progress"><span data-work-index-current aria-live="off">01</span> / 07</span></p>
+        <p class="work-index-title"><span>Sections</span><span class="work-index-progress"><span data-work-index-current aria-live="off">01</span> / 08</span></p>
         <a href="#editing"><span>01</span> Video editing</a>
         <a href="#character-replacement"><span>02</span> Character replacement</a>
         <a href="#restyling"><span>03</span> Video restyling</a>
@@ -88,6 +98,7 @@ custom_js:
         <a href="#lipsync"><span>05</span> V2V Lip sync</a>
         <a href="#talking-head"><span>06</span> Talking head</a>
         <a href="#image-workflows"><span>07</span> V2V image editing</a>
+        <a href="#inference-optimization"><span>08</span> Inference optimization</a>
       </nav>
 
       <div class="work-projects">
@@ -209,6 +220,46 @@ custom_js:
             <div class="media-grid media-grid-single">
               {% include work_video.html file="flux-klein-workflow-27-37-2x-framed.mp4" label="Input / output" %}
             </div>
+          </div>
+        </section>
+
+        <section class="work-project" id="inference-optimization" aria-labelledby="inference-title">
+          <header class="work-project-heading">
+            <span class="work-number">08</span>
+            <h2 id="inference-title">Inference optimization</h2>
+          </header>
+          <div class="model-group">
+            <header class="model-heading"><h3>Flux Klein 4B distilled</h3><p>Personal benchmark</p></header>
+            <div class="inference-overview">
+              <div class="inference-latency" aria-label="Model inference latency reduced from 324 milliseconds to 128 milliseconds, 2.5 times faster">
+                <p class="inference-eyebrow">Model inference latency</p>
+                <div class="inference-latency-values">
+                  <div class="inference-result">
+                    <span>Before</span>
+                    <strong>324 <small>ms</small></strong>
+                  </div>
+                  <span class="inference-arrow" aria-hidden="true">→</span>
+                  <div class="inference-result inference-result--optimized">
+                    <span>After</span>
+                    <strong>128 <small>ms</small></strong>
+                    <span class="inference-speedup">2.5× faster</span>
+                  </div>
+                </div>
+                <p class="inference-conditions">576 × 384 · 4 steps · RTX 6000 Pro on Modal</p>
+              </div>
+              <div class="inference-methods">
+                <p class="inference-eyebrow">Optimization work</p>
+                <ul>
+                  <li>DiT + VAE compilation</li>
+                  <li>Caching</li>
+                  <li>Faster attention</li>
+                  <li>NVFP4 weight + activation quantization</li>
+                  <li>Lighter VAE</li>
+                </ul>
+                <p class="inference-quality">No noticeable quality loss in my tests.</p>
+              </div>
+            </div>
+            <p class="inference-context">Personal inference optimization benchmark. The V2V workflow video above predates this work.</p>
           </div>
         </section>
       </div>
