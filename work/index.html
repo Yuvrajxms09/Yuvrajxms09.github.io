@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 10
+styles_version: 12
 custom_js:
   - work_video_controls
 ---
@@ -21,12 +21,49 @@ custom_js:
 
   <main>
     <section class="work-intro" aria-labelledby="work-title">
-      <h1 id="work-title">Selected work</h1>
+      <div class="work-intro-stage">
+        <div class="work-intro-heading">
+          <h1 id="work-title">Selected <em>work</em></h1>
+          <p class="work-intro-count"><span>07</span> projects</p>
+        </div>
+        <div class="work-intro-reel" data-work-reel aria-hidden="true">
+          <div class="work-intro-track" data-work-reel-track>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/ltx-edit-car-scene-edits.jpg' | relative_url }}" width="1200" height="568" alt="" decoding="async" />
+              <figcaption><span>01</span> Video editing</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/deadpool-h3-character-replacement.jpg' | relative_url }}" width="1080" height="1002" alt="" decoding="async" />
+              <figcaption><span>02</span> Character replacement</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/ltx-restyle-basketball-side-by-side.jpg' | relative_url }}" width="1600" height="616" alt="" decoding="async" />
+              <figcaption><span>03</span> Video restyling</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/outpaint-output-tom-cruise.jpg' | relative_url }}" width="332" height="600" alt="" decoding="async" />
+              <figcaption><span>04</span> Video outpainting</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/ltx-lipsync-ronaldo-output.jpg' | relative_url }}" width="800" height="400" alt="" decoding="async" />
+              <figcaption><span>05</span> Lip sync</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/minimax-lipsync-chris-evans.jpg' | relative_url }}" width="436" height="600" alt="" decoding="async" />
+              <figcaption><span>06</span> Talking head</figcaption>
+            </figure>
+            <figure class="work-reel-frame">
+              <img src="{{ '/assets/work/posters/flux-klein-webcam-comparison.jpg' | relative_url }}" width="800" height="440" alt="" decoding="async" />
+              <figcaption><span>07</span> Image workflows</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="work-content">
       <nav class="work-index" aria-label="Work sections">
-        <p class="work-index-title">On this page</p>
+        <p class="work-index-title"><span>Sections</span><span class="work-index-progress"><span data-work-index-current aria-live="off">01</span> / 07</span></p>
         <a href="#editing"><span>01</span> Video editing</a>
         <a href="#character-replacement"><span>02</span> Character replacement</a>
         <a href="#restyling"><span>03</span> Video restyling</a>
@@ -163,5 +200,5 @@ custom_js:
     </div>
   </main>
 
-<script src="{{ '/assets/js/work.js' | relative_url }}?v=2" defer></script>
+<script src="{{ '/assets/js/work.js' | relative_url }}?v=3" defer></script>
 </div>
