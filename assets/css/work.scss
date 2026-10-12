@@ -180,7 +180,7 @@ html { scroll-behavior: smooth; }
   .work-nav a { font-size: 11px; }
   .work-nav a:nth-child(3) { display: none; }
   .work-intro { min-height: 0; }
-  .work-intro-stage { min-height: 0; justify-content: flex-start; gap: 32px; padding: 44px 0 40px; }
+  .work-intro-stage { min-height: calc(100svh - 68px); gap: 34px; padding: 52px 0 46px; }
   .work-intro-copy { gap: 12px; }
   .work-intro-lead { max-width: 42ch; font-size: 15px; line-height: 1.5; }
   .work-intro-heading { align-items: end; gap: 12px; }
