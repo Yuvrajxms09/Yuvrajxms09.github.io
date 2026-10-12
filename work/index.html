@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 16
+styles_version: 17
 custom_js:
   - work_video_controls
 ---
@@ -46,16 +46,16 @@ custom_js:
                 <figcaption><span aria-hidden="true">03</span> Video restyling</figcaption>
               </figure>
             </a>
-            <a class="work-reel-frame" href="#outpainting" aria-label="Video outpainting">
+            <a class="work-reel-frame work-reel-frame--outpainting" href="#outpainting" aria-label="Video outpainting">
               <figure>
-                <img src="{{ '/assets/work/posters/outpaint-output-tom-cruise.jpg' | relative_url }}" width="332" height="600" alt="" decoding="async" />
+                <img src="{{ '/assets/work/posters/outpaint-output-10-things.jpg' | relative_url }}" width="343" height="600" alt="" decoding="async" />
                 <figcaption><span aria-hidden="true">04</span> Video outpainting</figcaption>
               </figure>
             </a>
-            <a class="work-reel-frame" href="#lipsync" aria-label="Lip sync">
+            <a class="work-reel-frame" href="#lipsync" aria-label="V2V Lip sync">
               <figure>
                 <img src="{{ '/assets/work/posters/ltx-lipsync-ronaldo-output.jpg' | relative_url }}" width="800" height="400" alt="" decoding="async" />
-                <figcaption><span aria-hidden="true">05</span> Lip sync</figcaption>
+                <figcaption><span aria-hidden="true">05</span> V2V Lip sync</figcaption>
               </figure>
             </a>
             <a class="work-reel-frame" href="#talking-head" aria-label="Talking head">
@@ -82,7 +82,7 @@ custom_js:
         <a href="#character-replacement"><span>02</span> Character replacement</a>
         <a href="#restyling"><span>03</span> Video restyling</a>
         <a href="#outpainting"><span>04</span> Video outpainting</a>
-        <a href="#lipsync"><span>05</span> Lip sync</a>
+        <a href="#lipsync"><span>05</span> V2V Lip sync</a>
         <a href="#talking-head"><span>06</span> Talking head</a>
         <a href="#image-workflows"><span>07</span> Image workflows</a>
       </nav>
@@ -150,14 +150,14 @@ custom_js:
             <header class="model-heading"><h3>LTX 2.3</h3></header>
             <div class="comparison-list">
               <div class="comparison-row">
-                <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>4:3 → 4:7</p></div>
+                <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>Landscape → portrait</p></div>
                 <div class="comparison-media">
                   {% include work_video.html file="outpaint-input-10-things.mp4" label="Input" detail="768 × 576" variant="outpainting-comparison" %}
                   {% include work_video.html file="outpaint-output-10-things.mp4" label="Outpainted" detail="768 × 1344" variant="outpainting-comparison" %}
                 </div>
               </div>
               <div class="comparison-row">
-                <div class="comparison-title"><h4>Eyes Wide Shut · Tom Cruise</h4><p>16:9 → 26:47</p></div>
+                <div class="comparison-title"><h4>Eyes Wide Shut · Tom Cruise</h4><p>Landscape → portrait</p></div>
                 <div class="comparison-media">
                   {% include work_video.html file="outpaint-input-tom-cruise.mp4" label="Input" detail="854 × 480" variant="outpainting-comparison" %}
                   {% include work_video.html file="outpaint-output-tom-cruise.mp4" label="Outpainted" detail="832 × 1504" variant="outpainting-comparison" %}
@@ -170,7 +170,7 @@ custom_js:
         <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
           <header class="work-project-heading">
             <span class="work-number">05</span>
-            <h2 id="lipsync-title">Lip sync</h2>
+            <h2 id="lipsync-title">V2V Lip sync</h2>
           </header>
 
           <div class="model-group">
