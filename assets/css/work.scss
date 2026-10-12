@@ -111,7 +111,7 @@ html { scroll-behavior: smooth; }
 .work-projects { min-width: 0; }
 .work-project { padding: 0 0 clamp(48px, 7vw, 88px); margin: 0 0 clamp(45px, 6vw, 76px); border-bottom: 1px solid $line; scroll-margin-top: 30px; }
 .work-project:last-child { margin-bottom: 0; border-bottom: 0; }
-.work-project:target { scroll-margin-top: 36px; }
+.work-site .work-project:target { background: transparent; scroll-margin-top: 36px; }
 .work-project-heading { display: grid; grid-template-columns: 39px minmax(0, 1fr); gap: 17px; align-items: start; padding: 0 0 27px; border-bottom: 1px solid $line; }
 .work-number { display: block; padding-top: 10px; color: $accent; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; letter-spacing: .04em; }
 .work-project-heading h2 { margin: 0; font-size: clamp(35px, 5vw, 64px); font-weight: 550; letter-spacing: -.067em; line-height: .98; }
