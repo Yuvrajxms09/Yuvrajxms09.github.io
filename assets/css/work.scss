@@ -301,8 +301,7 @@ html { scroll-behavior: smooth; }
 
   .work-site.has-motion .work-project-heading,
   .work-site.has-motion .model-heading,
-  .work-site.has-motion .work-media,
-  .work-site.has-motion .inference-overview {
+  .work-site.has-motion .work-media {
     opacity: 0;
     transform: translate3d(0, 12px, 0);
     transition: opacity .38s ease, transform .48s cubic-bezier(.2, .7, .2, 1);
@@ -314,8 +313,7 @@ html { scroll-behavior: smooth; }
   @media (min-width: 1001px) {
     .work-site.has-motion .work-project-heading,
     .work-site.has-motion .model-heading,
-    .work-site.has-motion .work-media,
-    .work-site.has-motion .inference-overview {
+    .work-site.has-motion .work-media {
       transform: translate3d(0, 14px, 0);
       transition: opacity .42s ease, transform .54s cubic-bezier(.16, 1, .3, 1);
     }
