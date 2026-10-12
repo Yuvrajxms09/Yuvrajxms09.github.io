@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 26
+styles_version: 27
 custom_js:
   - work_video_controls
 ---
@@ -156,14 +156,16 @@ custom_js:
                 <p class="inference-eyebrow">Model inference latency</p>
                 <div class="inference-latency-values">
                   <div class="inference-result inference-result--baseline">
-                    <span>Before</span>
+                    <span class="inference-result-label">Before</span>
                     <strong>324 <small>ms</small></strong>
+                    <span class="inference-bar" aria-hidden="true"></span>
                   </div>
                   <span class="inference-arrow" aria-hidden="true">→</span>
                   <div class="inference-result inference-result--optimized">
-                    <span>After</span>
+                    <span class="inference-result-label">After</span>
                     <strong>128 <small>ms</small></strong>
                     <span class="inference-speedup">2.5× faster</span>
+                    <span class="inference-bar" aria-hidden="true"></span>
                   </div>
                 </div>
                 <p class="inference-conditions">576 × 384 · 4 steps · RTX 6000 Pro on Modal</p>
