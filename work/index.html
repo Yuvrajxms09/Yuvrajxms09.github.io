@@ -4,7 +4,7 @@ title: Work — Yuvraj Singh
 permalink: /work/
 styles:
   - work
-styles_version: 30
+styles_version: 31
 custom_js:
   - work_video_controls
 ---
@@ -52,9 +52,25 @@ custom_js:
             <a class="work-reel-frame work-reel-frame--benchmark" href="#inference-optimization" aria-label="Inference optimization, Flux Klein 4B, 324 to 128 milliseconds">
               <figure>
                 <div class="work-reel-benchmark-art" aria-hidden="true">
-                  <span class="work-reel-benchmark-model">FLUX KLEIN 4B</span>
-                  <div class="work-reel-benchmark-values"><span>324</span><i>→</i><strong>128</strong></div>
-                  <span class="work-reel-benchmark-detail">ms model inference · 2.5× faster</span>
+                  <div class="work-reel-benchmark-header">
+                    <span class="work-reel-benchmark-model">FLUX KLEIN 4B</span>
+                    <span class="work-reel-benchmark-kind">MODEL INFERENCE</span>
+                  </div>
+                  <div class="work-reel-benchmark-values">
+                    <div class="work-reel-benchmark-result work-reel-benchmark-result--before">
+                      <span class="work-reel-benchmark-label">Before</span>
+                      <strong>324 <small>ms</small></strong>
+                    </div>
+                    <i aria-hidden="true">→</i>
+                    <div class="work-reel-benchmark-result work-reel-benchmark-result--after">
+                      <span class="work-reel-benchmark-label">After</span>
+                      <strong>128 <small>ms</small></strong>
+                    </div>
+                  </div>
+                  <div class="work-reel-benchmark-detail">
+                    <strong>2.5× faster</strong>
+                    <span>576 × 384 · 4 steps</span>
+                  </div>
                 </div>
                 <figcaption><span aria-hidden="true">04</span> Inference optimization</figcaption>
               </figure>
