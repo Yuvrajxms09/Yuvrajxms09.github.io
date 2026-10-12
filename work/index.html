@@ -32,20 +32,18 @@ custom_js:
         <a href="#restyling"><span>03</span> Video restyling</a>
         <a href="#outpainting"><span>04</span> Video outpainting</a>
         <a href="#lipsync"><span>05</span> Lip sync</a>
-        <a href="#image-workflows"><span>06</span> Image workflows</a>
+        <a href="#talking-head"><span>06</span> Talking head</a>
+        <a href="#image-workflows"><span>07</span> Image workflows</a>
       </nav>
 
       <div class="work-projects">
         <section class="work-project" id="editing" aria-labelledby="editing-title">
           <header class="work-project-heading">
             <span class="work-number">01</span>
-            <div>
-              <h2 id="editing-title">Video editing</h2>
-              <p class="work-summary">LTX edits to one source clip: scene changes, object changes, and removals.</p>
-            </div>
+            <h2 id="editing-title">Video editing</h2>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Video-to-video editing</p></header>
+            <header class="model-heading"><h3>LTX 2.3</h3></header>
             <div class="media-grid media-grid-wide">
               {% include work_video.html file="ltx-edit-car-scene-edits.mp4" label="Scene edits" detail="Input · Rain · Sunset · Pink foliage" variant="video-edit-comparison" %}
               {% include work_video.html file="ltx-edit-car-object-edits.mp4" label="Object edits" detail="Input · Add birds · Add roof box · Replace with superbike" variant="video-edit-comparison" %}
@@ -57,22 +55,13 @@ custom_js:
         <section class="work-project" id="character-replacement" aria-labelledby="character-title">
           <header class="work-project-heading">
             <span class="work-number">02</span>
-            <div>
-              <h2 id="character-title">Character replacement</h2>
-              <p class="work-summary">H3 character replacement results against their source clips.</p>
-            </div>
+            <h2 id="character-title">Character replacement</h2>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>H3</h3><p>Character replacement output</p></header>
+            <header class="model-heading"><h3>MiniMax H3</h3></header>
             <div class="media-grid">
-              {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / H3 output" %}
-              {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / H3 output" %}
-            </div>
-          </div>
-          <div class="model-group">
-            <header class="model-heading"><h3>MM7 · H3</h3><p>Side-by-side comparison</p></header>
-            <div class="media-grid media-grid-single">
-              {% include work_video.html file="michael-jackson-mm7-vs-h3.mp4" label="Michael Jackson" detail="MM7 / H3" %}
+              {% include work_video.html file="deadpool-h3-character-replacement.mp4" label="Deadpool" detail="Input / output" %}
+              {% include work_video.html file="peter-parker-h3-character-replacement.mp4" label="Peter Parker" detail="Input / output" %}
             </div>
           </div>
         </section>
@@ -80,14 +69,11 @@ custom_js:
         <section class="work-project" id="restyling" aria-labelledby="restyling-title">
           <header class="work-project-heading">
             <span class="work-number">03</span>
-            <div>
-              <h2 id="restyling-title">Video restyling</h2>
-              <p class="work-summary">LTX style transfers, plus a Minimax car scene.</p>
-            </div>
+            <h2 id="restyling-title">Video restyling</h2>
           </header>
 
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Style transfer · threshold study</p></header>
+            <header class="model-heading"><h3>LTX 2.3</h3></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="ltx-restyle-threshold-comparison.mp4" label="Threshold study" detail="Input / output · 0.15 threshold" %}
             </div>
@@ -98,7 +84,7 @@ custom_js:
           </div>
 
           <div class="model-group">
-            <header class="model-heading"><h3>Minimax</h3><p>Sage style comparison</p></header>
+            <header class="model-heading"><h3>MiniMax H3</h3></header>
             <div class="media-grid media-grid-single">
               {% include work_video.html file="minimax-restyle-car-scene.mp4" label="Car scene" detail="Original + stylized results" %}
             </div>
@@ -108,13 +94,10 @@ custom_js:
         <section class="work-project" id="outpainting" aria-labelledby="outpainting-title">
           <header class="work-project-heading">
             <span class="work-number">04</span>
-            <div>
-              <h2 id="outpainting-title">Video outpainting</h2>
-              <p class="work-summary">LTX expands the source frame to portrait; each input shows the matching five-second segment.</p>
-            </div>
+            <h2 id="outpainting-title">Video outpainting</h2>
           </header>
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>Portrait frame expansion</p></header>
+            <header class="model-heading"><h3>LTX 2.3</h3></header>
             <div class="comparison-list">
               <div class="comparison-row">
                 <div class="comparison-title"><h4>10 Things I Hate About You · Julia</h4><p>4:3 → 4:7</p></div>
@@ -137,36 +120,36 @@ custom_js:
         <section class="work-project" id="lipsync" aria-labelledby="lipsync-title">
           <header class="work-project-heading">
             <span class="work-number">05</span>
-            <div>
-              <h2 id="lipsync-title">Lip sync</h2>
-              <p class="work-summary">LTX V2V and Minimax R2V results.</p>
-            </div>
+            <h2 id="lipsync-title">Lip sync</h2>
           </header>
 
           <div class="model-group">
-            <header class="model-heading"><h3>LTX</h3><p>V2V lip sync</p></header>
+            <header class="model-heading"><h3>LTX 2.3</h3><p>V2V</p></header>
             <div class="media-grid">
-              {% include work_video.html file="ltx-lipsync-ronaldo-output.mp4" label="Ronaldo" detail="V2V output" variant="lipsync-output" %}
-              {% include work_video.html file="ltx-lipsync-boy-output.mp4" label="Speaking clip" detail="LTX-2.3 · V2V output" variant="lipsync-output" %}
+              {% include work_video.html file="ltx-lipsync-ronaldo-output.mp4" label="Ronaldo" variant="lipsync-output" %}
+              {% include work_video.html file="ltx-lipsync-boy-output.mp4" label="Speaking clip" variant="lipsync-output" %}
             </div>
           </div>
+        </section>
 
+        <section class="work-project" id="talking-head" aria-labelledby="talking-head-title">
+          <header class="work-project-heading">
+            <span class="work-number">06</span>
+            <h2 id="talking-head-title">Talking head</h2>
+          </header>
           <div class="model-group">
-            <header class="model-heading"><h3>Minimax</h3><p>Talking-head</p></header>
+            <header class="model-heading"><h3>MiniMax H3</h3><p>R2V</p></header>
             <div class="media-grid">
-              {% include work_video.html file="minimax-lipsync-chris-evans.mp4" label="Chris Evans" detail="R2V output" variant="lipsync-output" %}
-              {% include work_video.html file="minimax-lipsync-robert-downey-jr.mp4" label="Robert Downey Jr." detail="R2V output" variant="lipsync-output" %}
+              {% include work_video.html file="minimax-lipsync-chris-evans.mp4" label="Chris Evans" variant="lipsync-output" %}
+              {% include work_video.html file="minimax-lipsync-robert-downey-jr.mp4" label="Robert Downey Jr." variant="lipsync-output" %}
             </div>
           </div>
         </section>
 
         <section class="work-project" id="image-workflows" aria-labelledby="image-title">
           <header class="work-project-heading">
-            <span class="work-number">06</span>
-            <div>
-              <h2 id="image-title">Image workflows</h2>
-              <p class="work-summary">Live webcam edits with Flux Klein 4B.</p>
-            </div>
+            <span class="work-number">07</span>
+            <h2 id="image-title">Image workflows</h2>
           </header>
           <div class="model-group">
             <header class="model-heading"><h3>Flux Klein 4B</h3></header>
